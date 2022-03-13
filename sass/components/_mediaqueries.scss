@@ -43,12 +43,11 @@
         .sectFoot{
             min-height: 100px;
             .LogoCha{
-                margin-left: 10px;
+                margin-left: 20px;
                 width: 30%; 
             }
             .redes{
                 div{
-                    margin:0.5px;
                     .img-fluid{
                         min-width:15px;
                     }
@@ -240,7 +239,8 @@
     } 
     /*Mediaqueries Contacto*/
     .contact{
-        
+        height: 400px;
+        width: 100%;
         form{
             .formulario{
                 font-size:$fontsize-titlesQueriesCel;
@@ -278,7 +278,9 @@
                     display: flex;
                     flex-wrap: nowrap;
                     justify-content: start;
-                    font-size:$fontsize-titlesQueriesCel;
+                    .boton{
+                        font-size:$fontsize-titlesQueriesCel;
+                    }
                 }
                 
             }
@@ -439,7 +441,7 @@
 
     /*Mediaqueries Contacto*/
     .contact{
-        background-position: left;
+        height: min-content;
         form{
             .formulario{
                 font-size: ($fontsize-titlesQueries)-3px;
@@ -471,8 +473,13 @@
                 }
                 .button{
                     width: 70px;
-                    margin-right: 0;
-                    margin-left: 0;
+                    margin: 0;
+                    display: flex;
+                    flex-wrap: nowrap;
+                    justify-content:start;
+                    .boton{
+                        font-size:$fontsize-titlesQueries;
+                    }
                     
                 }
                 

@@ -468,12 +468,10 @@ footer {
   footer .sectFoot {
     min-height: 100px; }
     footer .sectFoot .LogoCha {
-      margin-left: 10px;
+      margin-left: 20px;
       width: 30%; }
-    footer .sectFoot .redes div {
-      margin: 0.5px; }
-      footer .sectFoot .redes div .img-fluid {
-        min-width: 15px; }
+    footer .sectFoot .redes div .img-fluid {
+      min-width: 15px; }
   /*Mediaqueries Home*/
   .mainHome div section {
     height: 150px; }
@@ -580,35 +578,39 @@ footer {
       .mainProceso .contenedorPasos .paso7txt p {
         font-size: 12px; }
   /*Mediaqueries Contacto*/
-  .contact form .formulario {
-    font-size: 10px;
-    margin-right: 5px;
-    width: 80%; }
-    .contact form .formulario legend {
+  .contact {
+    height: 400px;
+    width: 100%; }
+    .contact form .formulario {
       font-size: 10px;
-      margin-top: 30px;
-      margin-bottom: 20px; }
-    .contact form .formulario .form-group {
-      margin: 2px; }
-      .contact form .formulario .form-group input {
-        margin: 5px;
-        height: 10px;
-        font-size: 5px; }
-      .contact form .formulario .form-group .msg {
-        height: 30px; }
-    .contact form .formulario .horario p {
-      margin-right: 0;
-      margin-bottom: 0;
-      width: 90%;
-      text-align: right;
-      font-size: 10px; }
-    .contact form .formulario .button {
-      width: 70px;
-      margin: 0;
-      display: flex;
-      flex-wrap: nowrap;
-      justify-content: start;
-      font-size: 10px; } }
+      margin-right: 5px;
+      width: 80%; }
+      .contact form .formulario legend {
+        font-size: 10px;
+        margin-top: 30px;
+        margin-bottom: 20px; }
+      .contact form .formulario .form-group {
+        margin: 2px; }
+        .contact form .formulario .form-group input {
+          margin: 5px;
+          height: 10px;
+          font-size: 5px; }
+        .contact form .formulario .form-group .msg {
+          height: 30px; }
+      .contact form .formulario .horario p {
+        margin-right: 0;
+        margin-bottom: 0;
+        width: 90%;
+        text-align: right;
+        font-size: 10px; }
+      .contact form .formulario .button {
+        width: 70px;
+        margin: 0;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: start; }
+        .contact form .formulario .button .boton {
+          font-size: 10px; } }
 
 /*Mediaqueries tablet*/
 @media screen and (max-width: 768px) and (min-width: 577px) {
@@ -677,7 +679,7 @@ footer {
     font-size: 15px; }
   /*Mediaqueries Contacto*/
   .contact {
-    background-position: left; }
+    height: min-content; }
     .contact form .formulario {
       font-size: 12px;
       margin-right: 10px; }
@@ -699,5 +701,9 @@ footer {
         font-size: 15px; }
       .contact form .formulario .button {
         width: 70px;
-        margin-right: 0;
-        margin-left: 0; } }
+        margin: 0;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: start; }
+        .contact form .formulario .button .boton {
+          font-size: 15px; } }
