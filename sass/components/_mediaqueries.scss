@@ -1,0 +1,486 @@
+/*Mediaqueries celulares*/
+@media screen and (max-width:576px) and (min-width:320px){
+    
+    /*Mediaqueries body*/
+    .body{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+        
+    /*Mediaqueries Header*/
+    #up{
+        .div1{
+            .div2{
+                a{
+                   .imgCha{
+                        width: 15%;
+                }
+                }
+            }
+            .div3{
+                .navegacion{   
+                    .menu{
+                       li{
+                          a{
+                            padding:1px;
+                            margin: 3px;
+                            font-size: $fontsize-titlesQueriesCel;
+                           }
+                            
+                        }
+                    }
+                }
+            }  
+        }
+        .div4{
+            .tituloPrincipal{
+               font-size:$fontsize-titlesQueriesCel;
+            }
+        }
+    }
+    /*Mediaqueries footer*/
+    footer{
+        .sectFoot{
+            min-height: 100px;
+            .LogoCha{
+                margin-left: 10px;
+                width: 30%; 
+            }
+            .redes{
+                div{
+                    margin:0.5px;
+                    .img-fluid{
+                        min-width:15px;
+                    }
+                }
+            }
+        }
+    }
+
+    /*Mediaqueries Home*/
+    .mainHome{
+        div{
+            section{
+                height: 150px;
+            }
+            .centerHome{
+                height: 300px;
+                .CHA{
+                    width: 30%;
+                    height: 30%;
+                }
+            }
+            .Tesoro{
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                
+                div{
+                    display: flex;
+                    align-items: center;
+                    justify-items: center;
+                    .fraseTesoro{
+                        width: 80%;
+                    }
+                    p{
+                        padding-top: 10px;
+                        text-align: start;
+                        width: 85%;
+                        font-size:$fontsize-titlesQueriesCel;   
+                    }
+                }
+            }
+            .iconos{
+                display: flex;
+                flex-direction: column;
+                height: 325px;
+                justify-content: space-between;
+                img{
+                    width: 120px;
+                }
+
+            }
+           
+        }
+    }
+    /*Mediaqueries Productos*/
+    .mainProducts{
+        .Pto{
+            display: grid;
+            grid-template-areas:"img1" 
+                                "img2"
+                                "img3" 
+                                "img4"
+                                "img5" 
+                                "img6"
+                                "img7" 
+                                "img8"
+                                "img9" ;
+            grid-template-columns: 1fr ;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+
+            div{
+                font-size:$fontsize-titlesQueriesCel ;
+                .rinonera{
+                    grid-area: "img1";
+                }
+                .cartera{
+                    grid-area: "img2";
+                }
+                .rinonera4{
+                    grid-area: "img3";
+                }
+                .mochila{
+                    grid-area: "img4";
+                }
+                .bandolera{
+                    grid-area: "img5";
+                }
+                .billeteraGrande{
+                    grid-area: "img6";
+                }
+                .billetera{
+                    grid-area: "img7";
+                }
+                .billeteraChica{
+                    grid-area: "img8";
+                }
+                .tabaquera{
+                    grid-area: "img9";
+                }   
+            }
+        }
+    }
+
+    /*Mediaqueries Quienes somos*/
+    .mainNosotros{
+        .pensar{                      
+            .inicios{
+                width: 85%;
+                margin-left: 20px;
+                p{
+                    font-size:$fontsize-titlesQueriesCel ;
+                    text-align: left;
+                }
+            }   
+        }
+        .futuro{
+            .fusion{
+                width: 85%;
+                margin-top: 10px;
+                margin-right: 10px;
+                p{
+                    font-size:$fontsize-titlesQueriesCel;
+                    text-align: left;
+                    
+                }
+            }   
+        }
+        .lutherKing{
+            display: grid;
+            img{
+                width:100%;
+            }
+        }
+        .mision{
+            height: 100px;
+            p{
+                font-size: $fontsize-titlesQueriesCel;
+                width: 90%;
+            }
+        }
+    }
+    /*Mediaqueries Proceso sustentable*/
+    .mainProceso{
+        .contenedorPasos{
+            display: grid;
+            grid-template-areas:"p1" 
+                                "p2"
+                                "p3" 
+                                "p4"
+                                "p5" 
+                                "p6"
+                                "p7" 
+                                "p7t";
+            grid-template-columns: 1fr ;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+            div{
+                p{
+                  font-size: $fontsize-titlesQueriesCel;
+                }
+            }
+            .paso1{
+                grid-area:"p1";
+            }
+            .paso2{
+                grid-area:"p2";
+            }
+            .paso3{
+                grid-area:"p3";
+            }
+            .paso4{
+                grid-area:"p4";
+            }
+            .paso5{
+                grid-area:"p5";
+            }
+            .paso6{
+                grid-area:"p6";
+            }
+            .paso7{
+                grid-area:"p7";
+            }
+            .paso7txt{
+                grid-area:"p7t";
+                p{
+                    font-size: ($fontsize-titlesQueriesCel)+2px;
+                }
+            }
+        }
+    } 
+    /*Mediaqueries Contacto*/
+    .contact{
+        
+        form{
+            .formulario{
+                font-size:$fontsize-titlesQueriesCel;
+                margin-right: 5px;
+                width: 80%;
+                
+                legend{
+                    font-size:$fontsize-titlesQueriesCel;
+                    margin-top: 30px;
+                    margin-bottom: 20px;  
+                }
+                .form-group{
+                    margin: 2px;
+                    input{
+                        margin:5px;
+                        height: 10px;
+                        font-size: 5px;
+                    }
+                    .msg{
+                        height: 30px;
+                    }
+                }
+                .horario{
+                    p{
+                        margin-right: 0;
+                        margin-bottom: 0;
+                        width:90%;
+                        text-align:right;
+                        font-size:$fontsize-titlesQueriesCel;  
+                    }
+                }
+                .button{
+                    width: 70px;
+                    margin: 0;
+                    display: flex;
+                    flex-wrap: nowrap;
+                    justify-content: start;
+                    font-size:$fontsize-titlesQueriesCel;
+                }
+                
+            }
+        }
+        
+    }
+
+    
+}
+
+
+
+
+
+ /*Mediaqueries tablet*/
+@media screen and (max-width:768px) and (min-width:577px){
+    /*Mediaqueries Header*/
+    #up{
+        .div1{
+            .div2{
+                a{
+                   .imgCha{
+                        width: 20%;
+                }
+                }
+            }
+            .div3{
+                .navegacion{   
+                    .menu{
+                       li{
+                          a{
+                            padding:2px;
+                            margin: 5px;
+                            font-size: $fontsize-titlesQueries;
+                           }
+                            
+                        }
+                    }
+                }
+            }  
+        }
+        .div4{
+            .tituloPrincipal{
+               font-size:($fontsize-titlesQueries)+5;
+            }
+        }
+    }
+    /*Mediaqueries footer*/
+    footer{
+        .sectFoot{
+            .LogoCha{
+                margin-left: 50px;
+            }
+            .redes{
+                div{
+                    margin:1px;
+                }
+                
+            }
+        }
+    }
+    /*Mediaqueries Home*/
+    .mainHome{
+        div{
+            section{
+                height: 250px;
+            }
+            .centerHome{
+                height: 500px;
+                .CHA{
+                    width: 25%;
+                    height: 30%;
+                }
+            }
+            .Tesoro{
+                min-height: fit-content;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                div{
+                    .fraseTesoro{
+                        margin-top: 2px;
+                        width: 80%;
+                    }
+                    p{
+                        
+                        width: 85%;
+                        font-size:($fontsize-titlesQueries)-2px;
+                        
+                        
+                    }
+                }
+            }
+           
+        }
+    }
+    /*Mediaqueries Productos*/
+    .mainProducts{
+        .Pto{
+            div{
+                font-size:($fontsize-titlesQueries)-3px ;
+                
+            }
+        }
+    }
+    /*Mediaqueries Quienes somos*/
+    .mainNosotros{
+        .pensar{                      
+            .inicios{
+                width: 70%;
+                margin-left: 30px;
+                p{
+                    font-size:($fontsize-titlesQueries)-3px ;
+                    text-align: center;
+                }
+            }   
+        }
+        .futuro{
+            .fusion{
+                width: 70%;
+                margin-right: 30px;
+                p{
+                    font-size:($fontsize-titlesQueries)-3px;
+                    text-align: center;
+                    
+                }
+            }   
+        }
+        .lutherKing{
+            display: grid;
+            img{
+                width:100%;
+            }
+        }
+        .mision{
+            height: 150px;
+            p{
+                font-size: $fontsize-titlesQueries;
+                width: 90%;
+            }
+        }
+    }
+    /*Mediaqueries Proceso sustentable*/
+    .mainProceso{
+        .contenedorPasos{
+            div{
+                p{
+                  font-size:($fontsize-titlesQueries)-2px;
+                }
+            }
+            .paso7txt{
+                p{
+                    font-size: $fontsize-titlesQueries;
+                }
+            }  
+        }
+    } 
+
+    /*Mediaqueries Contacto*/
+    .contact{
+        background-position: left;
+        form{
+            .formulario{
+                font-size: ($fontsize-titlesQueries)-3px;
+                margin-right: 10px;
+                
+                legend{
+                    font-size:($fontsize-titlesQueries)+2px;
+                    margin-top: 80px;
+                    margin-bottom: 50px;  
+                }
+                .form-group{
+                    input{
+                        margin:5px;
+                        height: 30px;
+                        font-size: 10px;
+                    }
+                    .msg{
+                        height: 75px;
+                    }
+                }
+                .horario{
+                    p{
+                        margin-right: 0;
+                        margin-bottom: 0;
+                        width:90%;
+                        text-align:center;
+                        font-size:$fontsize-titlesQueries;  
+                    }
+                }
+                .button{
+                    width: 70px;
+                    margin-right: 0;
+                    margin-left: 0;
+                    
+                }
+                
+            }
+        }
+        
+    }
+}
+
+
+

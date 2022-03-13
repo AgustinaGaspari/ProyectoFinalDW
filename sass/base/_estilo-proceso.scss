@@ -1,0 +1,74 @@
+/*Estilos body procesosustentable.html*/
+
+.bodyProceso{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+/*Estilos main procesosustentable.html*/
+.mainProceso{
+   background-image: url(../img/fondo3.png);
+   background-repeat:no-repeat; 
+   background-size: cover;
+   background-position: center;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   .contenedorPasos{
+       display: grid;
+       grid-template-areas: "p1 p2"
+                            "p3 p4"
+                            "p5 p6"
+                            "p7 p7t" ;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        width: 100%;
+        align-items:center;
+        justify-items: center;
+        div{
+            
+
+            p{
+                font-family:$fontfamily-text; 
+                font-size: $fontsize-text;
+                letter-spacing: 2px;
+                color: #4e4d4d;
+                text-align: center;
+            }
+        }
+        .paso1{
+            grid-area: "p1";
+            @include Proceso;
+        }
+        .paso2{
+            grid-area:"p2";
+            @include Proceso;
+        }
+        .paso3{
+            grid-area:"p3";
+            @include Proceso;
+        }
+        .paso4{
+            grid-area:"p4";
+            @include Proceso;
+        }
+        .paso5{
+            grid-area:"p5";
+            @include Proceso;
+        }
+        .paso6{
+            grid-area:"p6";
+            @include Proceso;
+        }
+        .paso7{
+            grid-area:"p7";
+            @include Proceso;
+        }
+        .paso7txt{
+            grid-area: "p7t";
+            p{
+                font-size: ($fontsize-titles)-5px;
+            }
+        }
+    }
+}
+

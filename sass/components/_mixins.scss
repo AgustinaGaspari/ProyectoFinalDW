@@ -1,0 +1,49 @@
+/*mixins*/
+
+@mixin Animacion{
+    animation-name: agrandar;
+    animation-iteration-count:initial;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-direction: alternate;   
+}
+
+@mixin Productos{
+    font-family: $fontfamily-text;
+    font-size: $fontsize-text;
+    color: #4e4d4d;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 5%;
+    &:hover{
+        border:0.5px solid #000000;
+        @include Animacion;
+        @keyframes agrandar {    
+            from{
+            transform: scale(1.0);
+            }
+            to{
+            transform:scale(1.03)
+            }
+        }
+    }
+}
+@mixin Proceso {
+    &:hover{
+    border: 0.2px dashed #6b6a6a;
+    }
+}
+
+@mixin botones {
+    &:hover{
+        @include Animacion;
+        @keyframes agrandar {    
+            from{
+            transform: scale(1.0);
+            }
+            to{
+            transform:scale(1.02)
+            }
+        }
+        }
+}

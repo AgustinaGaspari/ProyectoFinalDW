@@ -1,0 +1,21 @@
+/*Extends*/
+%titulosNav {
+    font-family:$fontfamily-titles;
+    font-size: $fontsize-titles;
+    color: #000000;
+    text-align:center;
+    padding:5px;
+    margin: 10px;
+    background-color: #FFFFFF;
+}
+%titulosPrincipal{
+    font-family:$fontfamily-titles;
+    font-size: $fontsize-titles;
+    color:#FFFFFF;
+    text-align:left;
+    
+}
+%marginRedes{
+    margin:10px;
+}
+

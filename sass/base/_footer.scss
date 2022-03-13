@@ -1,0 +1,46 @@
+/*estilos footer de todas las páginas*/
+footer{
+    background-color: #000000;
+    background-size: cover;
+    
+    .sectFoot{
+        min-height: 186px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "logoChamama" "redes";
+        align-items: center;
+        justify-content: center;
+        .LogoCha{
+            grid-template-columns:"logoChamama";
+            grid-row: 1fr;
+            margin-left: 80px;
+            margin-top: 5px;
+        }
+        .redes{
+            grid-template-columns: "redes";
+            display: flex;
+            justify-content: end;
+            align-items:baseline;
+            
+            .divIg{
+                @extend %marginRedes; 
+                
+            }
+            .divMail{
+                @extend %marginRedes; 
+            }
+            .divWapp{
+                @extend %marginRedes; 
+            }
+            .divLugar{
+                @extend %marginRedes; 
+            }
+            .divUp{
+                margin:20px;
+                
+            }
+            
+        }
+    }
+}

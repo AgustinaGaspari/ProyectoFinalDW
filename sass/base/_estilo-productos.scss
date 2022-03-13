@@ -1,0 +1,82 @@
+/*estilos body Productos.html*/
+.bodyProductos{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+/*estilos main Productos.html*/
+.mainProducts{
+    div{
+        .fondoP{
+            width: 100%;
+        }
+    }
+    .Pto{
+        margin-top:20px;
+        margin-bottom: 20px;
+        background-image: url(../img/fondo3.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: grid;
+        grid-template-areas: "img1 img2 img3"
+                             "img4 img5 img6"
+                             "img7 img8 img9" ;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        align-items:center;
+        justify-items: center;
+        div{
+            @include Productos;
+                            
+            .rinonera{
+                grid-area: "img1";
+                width: $widthProductos;
+                
+                
+            }
+            .cartera{
+                grid-area: "img2";
+                width: $widthProductos;
+                
+            }
+            .rinonera4{
+                grid-area: "img3";
+                width: $widthProductos;
+                
+            }
+            .mochila{
+                grid-area: "img4";
+                width: $widthProductos;
+                
+            }
+            .bandolera{
+                grid-area: "img5";
+                width: $widthProductos;
+                
+            }
+            .billeteraGrande{
+                grid-area: "img6";
+                width: $widthProductos;
+               
+            }
+            .billetera{
+                grid-area: "img7";
+                width: $widthProductos;
+                
+            }
+            .billeteraChica{
+                grid-area: "img8";
+                width: $widthProductos;
+               
+            }
+            .tabaquera{
+                grid-area: "img9";
+                width: $widthProductos;
+                
+            }
+        }
+    }
+    
+}
+
+

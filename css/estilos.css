@@ -1,0 +1,703 @@
+@charset "UTF-8";
+/*mixins*/
+/*Extends*/
+#up .div1 .div3 .navegacion .menu li a {
+  font-family: "Antonio", sans-serif;
+  font-size: 30px;
+  color: #000000;
+  text-align: center;
+  padding: 5px;
+  margin: 10px;
+  background-color: #FFFFFF; }
+
+#up .div4 .tituloPrincipal {
+  font-family: "Antonio", sans-serif;
+  font-size: 30px;
+  color: #FFFFFF;
+  text-align: left; }
+
+footer .sectFoot .redes .divIg, footer .sectFoot .redes .divMail, footer .sectFoot .redes .divWapp, footer .sectFoot .redes .divLugar {
+  margin: 10px; }
+
+.bodyIndex {
+  background-color: #000000; }
+  .bodyIndex main {
+    margin-top: 150px; }
+    .bodyIndex main .entrar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      .bodyIndex main .entrar .logoIndex {
+        animation-name: aparecer1;
+        animation-iteration-count: infinite;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-direction: alternate; }
+
+@keyframes aparecer1 {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+        .bodyIndex main .entrar .logoIndex:hover {
+          animation-name: agrandar;
+          animation-iteration-count: initial;
+          animation-duration: 1s;
+          animation-timing-function: linear;
+          animation-direction: alternate; }
+
+@keyframes agrandar {
+  from {
+    transform: scale(1); }
+  to {
+    transform: scale(1.2); } }
+
+/*estilo home*/
+.bodyHome {
+  margin-left: 30px;
+  margin-right: 30px; }
+
+.mainHome div .fondo1 {
+  width: 100%; }
+
+.mainHome div section {
+  background-color: #FFFFFF; }
+  .mainHome div section .row {
+    display: flex;
+    align-content: center; }
+
+.mainHome div .centerHome {
+  background-image: url(../img/fotoMujer.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .mainHome div .centerHome .CHA {
+    width: 50%;
+    height: 60%; }
+    .mainHome div .centerHome .CHA:hover {
+      animation-name: agrandar;
+      animation-iteration-count: infinite;
+      animation-duration: 2s;
+      animation-timing-function: linear;
+      animation-direction: alternate; }
+
+@keyframes agrandar {
+  from {
+    transform: scale(1); }
+  to {
+    transform: scale(1.2); } }
+
+.mainHome div .Tesoro {
+  margin-top: 20px;
+  background-image: url(../img/fondo3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 400px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+  grid-template-areas: "fraseTesoro textoTesoro";
+  align-items: center; }
+  .mainHome div .Tesoro .fraseTesoro {
+    grid-area: "fraseTesoro";
+    justify-content: start; }
+  .mainHome div .Tesoro div {
+    grid-area: "textoTesoro";
+    width: 80%;
+    justify-content: center; }
+    .mainHome div .Tesoro div p {
+      font-size: 20px;
+      font-family: "Assistant", sans-serif;
+      letter-spacing: 2px; }
+
+.mainHome .iconos {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: #d3e1de;
+  background: linear-gradient(139deg, #d3e1de 0%, #fcddd2 100%);
+  height: 200px; }
+  .mainHome .iconos div {
+    justify-items: center; }
+
+/*estilo menu navegacion*/
+#up .div1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  #up .div1 .div2 {
+    justify-content: center; }
+    #up .div1 .div2 a {
+      display: block;
+      text-align: center; }
+      #up .div1 .div2 a .imgCha {
+        width: 50%;
+        margin-top: 20px; }
+  #up .div1 .div3 .navegacion {
+    width: 100%;
+    position: relative;
+    text-align: center; }
+    #up .div1 .div3 .navegacion .menu {
+      list-style: none; }
+      #up .div1 .div3 .navegacion .menu li {
+        position: relative;
+        display: inline-block; }
+        #up .div1 .div3 .navegacion .menu li a {
+          display: block;
+          text-decoration: none; }
+
+#up .div4 {
+  background-color: #000000;
+  padding: 5px;
+  display: flex;
+  justify-content: left; }
+  #up .div4 .tituloPrincipal {
+    margin: 5px; }
+
+/*estilos footer de todas las páginas*/
+footer {
+  background-color: #000000;
+  background-size: cover; }
+  footer .sectFoot {
+    min-height: 186px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "logoChamama" "redes";
+    align-items: center;
+    justify-content: center; }
+    footer .sectFoot .LogoCha {
+      grid-template-columns: "logoChamama";
+      grid-row: 1fr;
+      margin-left: 80px;
+      margin-top: 5px; }
+    footer .sectFoot .redes {
+      grid-template-columns: "redes";
+      display: flex;
+      justify-content: end;
+      align-items: baseline; }
+      footer .sectFoot .redes .divUp {
+        margin: 20px; }
+
+/*estilos body Productos.html*/
+.bodyProductos {
+  margin-left: 30px;
+  margin-right: 30px; }
+
+/*estilos main Productos.html*/
+.mainProducts div .fondoP {
+  width: 100%; }
+
+.mainProducts .Pto {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-image: url(../img/fondo3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-areas: "img1 img2 img3" "img4 img5 img6" "img7 img8 img9";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center; }
+  .mainProducts .Pto div {
+    font-family: "Assistant", sans-serif;
+    font-size: 20px;
+    color: #4e4d4d;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 5%; }
+    .mainProducts .Pto div:hover {
+      border: 0.5px solid #000000;
+      animation-name: agrandar;
+      animation-iteration-count: initial;
+      animation-duration: 1s;
+      animation-timing-function: linear;
+      animation-direction: alternate; }
+
+@keyframes agrandar {
+  from {
+    transform: scale(1); }
+  to {
+    transform: scale(1.03); } }
+    .mainProducts .Pto div .rinonera {
+      grid-area: "img1";
+      width: 100%; }
+    .mainProducts .Pto div .cartera {
+      grid-area: "img2";
+      width: 100%; }
+    .mainProducts .Pto div .rinonera4 {
+      grid-area: "img3";
+      width: 100%; }
+    .mainProducts .Pto div .mochila {
+      grid-area: "img4";
+      width: 100%; }
+    .mainProducts .Pto div .bandolera {
+      grid-area: "img5";
+      width: 100%; }
+    .mainProducts .Pto div .billeteraGrande {
+      grid-area: "img6";
+      width: 100%; }
+    .mainProducts .Pto div .billetera {
+      grid-area: "img7";
+      width: 100%; }
+    .mainProducts .Pto div .billeteraChica {
+      grid-area: "img8";
+      width: 100%; }
+    .mainProducts .Pto div .tabaquera {
+      grid-area: "img9";
+      width: 100%; }
+
+/*estilos body contacto.html*/
+.bodyContact {
+  margin-left: 30px;
+  margin-right: 30px; }
+
+/*estilos main contacto.html*/
+.contact {
+  background-image: url(../img/fotoFondo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 1210px;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+  .contact form .formulario {
+    font-family: "Assistant", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFFFFF;
+    width: 65%;
+    margin-right: 100px;
+    text-align: right; }
+    .contact form .formulario legend {
+      font-size: 30px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      margin-top: 150px;
+      margin-bottom: 100px;
+      text-align: right; }
+    .contact form .formulario .form-group {
+      margin: 50px; }
+      .contact form .formulario .form-group input {
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, #333333 0px 0px 0px 3px; }
+      .contact form .formulario .form-group .msg {
+        height: 150px; }
+    .contact form .formulario .button {
+      display: flex;
+      justify-content: end;
+      margin-right: 100px; }
+      .contact form .formulario .button .boton {
+        color: white;
+        background-color: #9da29f;
+        margin: 20px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, #333333 0px 0px 0px 3px;
+        font-weight: bold;
+        text-transform: uppercase; }
+        .contact form .formulario .button .boton:hover {
+          animation-name: agrandar;
+          animation-iteration-count: initial;
+          animation-duration: 1s;
+          animation-timing-function: linear;
+          animation-direction: alternate; }
+
+@keyframes agrandar {
+  from {
+    transform: scale(1); }
+  to {
+    transform: scale(1.02); } }
+    .contact form .formulario .horario p {
+      color: #FFFFFF;
+      margin-right: 100px;
+      font-family: "Assistant", sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px; }
+
+/*Estilos body quienessomos.html*/
+.bodyNosotros {
+  margin-left: 30px;
+  margin-right: 30px; }
+
+/*Estilos main quienessomos.html*/
+.pensar {
+  margin-top: 20px;
+  background-image: url(../img/fondo3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+  grid-template-areas: "vacio frase";
+  justify-items: left;
+  align-items: center; }
+  .pensar .inicios {
+    grid-area: frase;
+    width: 65%; }
+    .pensar .inicios p {
+      font-size: 22px;
+      font-family: "Assistant", sans-serif;
+      letter-spacing: 2px; }
+
+.futuro {
+  margin-top: 20px;
+  background-image: url(../img/fondoInvertido.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+  grid-template-areas: "frase vacio";
+  justify-items: right;
+  align-items: center; }
+  .futuro .fusion {
+    grid-area: frase;
+    width: 60%; }
+    .futuro .fusion p {
+      font-size: 22px;
+      font-family: "Assistant", sans-serif;
+      letter-spacing: 2px; }
+
+.lutherKing {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; }
+  .lutherKing img {
+    width: 90%; }
+
+.mision {
+  display: flex;
+  justify-content: center;
+  height: max-content;
+  margin-bottom: 30px; }
+  .mision p {
+    display: block;
+    font-size: 22px;
+    font-family: "Assistant", sans-serif;
+    letter-spacing: 2px;
+    width: 50%;
+    text-align: center; }
+
+/*Estilos body procesosustentable.html*/
+.bodyProceso {
+  margin-left: 30px;
+  margin-right: 30px; }
+
+/*Estilos main procesosustentable.html*/
+.mainProceso {
+  background-image: url(../img/fondo3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+  .mainProceso .contenedorPasos {
+    display: grid;
+    grid-template-areas: "p1 p2" "p3 p4" "p5 p6" "p7 p7t";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    align-items: center;
+    justify-items: center; }
+    .mainProceso .contenedorPasos div p {
+      font-family: "Assistant", sans-serif;
+      font-size: 20px;
+      letter-spacing: 2px;
+      color: #4e4d4d;
+      text-align: center; }
+    .mainProceso .contenedorPasos .paso1 {
+      grid-area: "p1"; }
+      .mainProceso .contenedorPasos .paso1:hover {
+        border: 0.2px dashed #6b6a6a; }
+    .mainProceso .contenedorPasos .paso2 {
+      grid-area: "p2"; }
+      .mainProceso .contenedorPasos .paso2:hover {
+        border: 0.2px dashed #6b6a6a; }
+    .mainProceso .contenedorPasos .paso3 {
+      grid-area: "p3"; }
+      .mainProceso .contenedorPasos .paso3:hover {
+        border: 0.2px dashed #6b6a6a; }
+    .mainProceso .contenedorPasos .paso4 {
+      grid-area: "p4"; }
+      .mainProceso .contenedorPasos .paso4:hover {
+        border: 0.2px dashed #6b6a6a; }
+    .mainProceso .contenedorPasos .paso5 {
+      grid-area: "p5"; }
+      .mainProceso .contenedorPasos .paso5:hover {
+        border: 0.2px dashed #6b6a6a; }
+    .mainProceso .contenedorPasos .paso6 {
+      grid-area: "p6"; }
+      .mainProceso .contenedorPasos .paso6:hover {
+        border: 0.2px dashed #6b6a6a; }
+    .mainProceso .contenedorPasos .paso7 {
+      grid-area: "p7"; }
+      .mainProceso .contenedorPasos .paso7:hover {
+        border: 0.2px dashed #6b6a6a; }
+    .mainProceso .contenedorPasos .paso7txt {
+      grid-area: "p7t"; }
+      .mainProceso .contenedorPasos .paso7txt p {
+        font-size: 25px; }
+
+/*Mediaqueries celulares*/
+@media screen and (max-width: 576px) and (min-width: 320px) {
+  /*Mediaqueries body*/
+  .body {
+    margin-left: 10px;
+    margin-right: 10px; }
+  /*Mediaqueries Header*/
+  #up .div1 .div2 a .imgCha {
+    width: 15%; }
+  #up .div1 .div3 .navegacion .menu li a {
+    padding: 1px;
+    margin: 3px;
+    font-size: 10px; }
+  #up .div4 .tituloPrincipal {
+    font-size: 10px; }
+  /*Mediaqueries footer*/
+  footer .sectFoot {
+    min-height: 100px; }
+    footer .sectFoot .LogoCha {
+      margin-left: 10px;
+      width: 30%; }
+    footer .sectFoot .redes div {
+      margin: 0.5px; }
+      footer .sectFoot .redes div .img-fluid {
+        min-width: 15px; }
+  /*Mediaqueries Home*/
+  .mainHome div section {
+    height: 150px; }
+  .mainHome div .centerHome {
+    height: 300px; }
+    .mainHome div .centerHome .CHA {
+      width: 30%;
+      height: 30%; }
+  .mainHome div .Tesoro {
+    height: 100%;
+    display: flex;
+    flex-direction: column; }
+    .mainHome div .Tesoro div {
+      display: flex;
+      align-items: center;
+      justify-items: center; }
+      .mainHome div .Tesoro div .fraseTesoro {
+        width: 80%; }
+      .mainHome div .Tesoro div p {
+        padding-top: 10px;
+        text-align: start;
+        width: 85%;
+        font-size: 10px; }
+  .mainHome div .iconos {
+    display: flex;
+    flex-direction: column;
+    height: 325px;
+    justify-content: space-between; }
+    .mainHome div .iconos img {
+      width: 120px; }
+  /*Mediaqueries Productos*/
+  .mainProducts .Pto {
+    display: grid;
+    grid-template-areas: "img1"  "img2" "img3"  "img4" "img5"  "img6" "img7"  "img8" "img9";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; }
+    .mainProducts .Pto div {
+      font-size: 10px; }
+      .mainProducts .Pto div .rinonera {
+        grid-area: "img1"; }
+      .mainProducts .Pto div .cartera {
+        grid-area: "img2"; }
+      .mainProducts .Pto div .rinonera4 {
+        grid-area: "img3"; }
+      .mainProducts .Pto div .mochila {
+        grid-area: "img4"; }
+      .mainProducts .Pto div .bandolera {
+        grid-area: "img5"; }
+      .mainProducts .Pto div .billeteraGrande {
+        grid-area: "img6"; }
+      .mainProducts .Pto div .billetera {
+        grid-area: "img7"; }
+      .mainProducts .Pto div .billeteraChica {
+        grid-area: "img8"; }
+      .mainProducts .Pto div .tabaquera {
+        grid-area: "img9"; }
+  /*Mediaqueries Quienes somos*/
+  .mainNosotros .pensar .inicios {
+    width: 85%;
+    margin-left: 20px; }
+    .mainNosotros .pensar .inicios p {
+      font-size: 10px;
+      text-align: left; }
+  .mainNosotros .futuro .fusion {
+    width: 85%;
+    margin-top: 10px;
+    margin-right: 10px; }
+    .mainNosotros .futuro .fusion p {
+      font-size: 10px;
+      text-align: left; }
+  .mainNosotros .lutherKing {
+    display: grid; }
+    .mainNosotros .lutherKing img {
+      width: 100%; }
+  .mainNosotros .mision {
+    height: 100px; }
+    .mainNosotros .mision p {
+      font-size: 10px;
+      width: 90%; }
+  /*Mediaqueries Proceso sustentable*/
+  .mainProceso .contenedorPasos {
+    display: grid;
+    grid-template-areas: "p1"  "p2" "p3"  "p4" "p5"  "p6" "p7"  "p7t";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; }
+    .mainProceso .contenedorPasos div p {
+      font-size: 10px; }
+    .mainProceso .contenedorPasos .paso1 {
+      grid-area: "p1"; }
+    .mainProceso .contenedorPasos .paso2 {
+      grid-area: "p2"; }
+    .mainProceso .contenedorPasos .paso3 {
+      grid-area: "p3"; }
+    .mainProceso .contenedorPasos .paso4 {
+      grid-area: "p4"; }
+    .mainProceso .contenedorPasos .paso5 {
+      grid-area: "p5"; }
+    .mainProceso .contenedorPasos .paso6 {
+      grid-area: "p6"; }
+    .mainProceso .contenedorPasos .paso7 {
+      grid-area: "p7"; }
+    .mainProceso .contenedorPasos .paso7txt {
+      grid-area: "p7t"; }
+      .mainProceso .contenedorPasos .paso7txt p {
+        font-size: 12px; }
+  /*Mediaqueries Contacto*/
+  .contact form .formulario {
+    font-size: 10px;
+    margin-right: 5px;
+    width: 80%; }
+    .contact form .formulario legend {
+      font-size: 10px;
+      margin-top: 30px;
+      margin-bottom: 20px; }
+    .contact form .formulario .form-group {
+      margin: 2px; }
+      .contact form .formulario .form-group input {
+        margin: 5px;
+        height: 10px;
+        font-size: 5px; }
+      .contact form .formulario .form-group .msg {
+        height: 30px; }
+    .contact form .formulario .horario p {
+      margin-right: 0;
+      margin-bottom: 0;
+      width: 90%;
+      text-align: right;
+      font-size: 10px; }
+    .contact form .formulario .button {
+      width: 70px;
+      margin: 0;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: start;
+      font-size: 10px; } }
+
+/*Mediaqueries tablet*/
+@media screen and (max-width: 768px) and (min-width: 577px) {
+  /*Mediaqueries Header*/
+  #up .div1 .div2 a .imgCha {
+    width: 20%; }
+  #up .div1 .div3 .navegacion .menu li a {
+    padding: 2px;
+    margin: 5px;
+    font-size: 15px; }
+  #up .div4 .tituloPrincipal {
+    font-size: 20px; }
+  /*Mediaqueries footer*/
+  footer .sectFoot .LogoCha {
+    margin-left: 50px; }
+  footer .sectFoot .redes div {
+    margin: 1px; }
+  /*Mediaqueries Home*/
+  .mainHome div section {
+    height: 250px; }
+  .mainHome div .centerHome {
+    height: 500px; }
+    .mainHome div .centerHome .CHA {
+      width: 25%;
+      height: 30%; }
+  .mainHome div .Tesoro {
+    min-height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .mainHome div .Tesoro div .fraseTesoro {
+      margin-top: 2px;
+      width: 80%; }
+    .mainHome div .Tesoro div p {
+      width: 85%;
+      font-size: 13px; }
+  /*Mediaqueries Productos*/
+  .mainProducts .Pto div {
+    font-size: 12px; }
+  /*Mediaqueries Quienes somos*/
+  .mainNosotros .pensar .inicios {
+    width: 70%;
+    margin-left: 30px; }
+    .mainNosotros .pensar .inicios p {
+      font-size: 12px;
+      text-align: center; }
+  .mainNosotros .futuro .fusion {
+    width: 70%;
+    margin-right: 30px; }
+    .mainNosotros .futuro .fusion p {
+      font-size: 12px;
+      text-align: center; }
+  .mainNosotros .lutherKing {
+    display: grid; }
+    .mainNosotros .lutherKing img {
+      width: 100%; }
+  .mainNosotros .mision {
+    height: 150px; }
+    .mainNosotros .mision p {
+      font-size: 15px;
+      width: 90%; }
+  /*Mediaqueries Proceso sustentable*/
+  .mainProceso .contenedorPasos div p {
+    font-size: 13px; }
+  .mainProceso .contenedorPasos .paso7txt p {
+    font-size: 15px; }
+  /*Mediaqueries Contacto*/
+  .contact {
+    background-position: left; }
+    .contact form .formulario {
+      font-size: 12px;
+      margin-right: 10px; }
+      .contact form .formulario legend {
+        font-size: 17px;
+        margin-top: 80px;
+        margin-bottom: 50px; }
+      .contact form .formulario .form-group input {
+        margin: 5px;
+        height: 30px;
+        font-size: 10px; }
+      .contact form .formulario .form-group .msg {
+        height: 75px; }
+      .contact form .formulario .horario p {
+        margin-right: 0;
+        margin-bottom: 0;
+        width: 90%;
+        text-align: center;
+        font-size: 15px; }
+      .contact form .formulario .button {
+        width: 70px;
+        margin-right: 0;
+        margin-left: 0; } }
