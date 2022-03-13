@@ -286,7 +286,7 @@ footer {
       letter-spacing: 2px;
       margin-top: 150px;
       margin-bottom: 100px;
-      text-align: right; }
+      text-align: center; }
     .contact form .formulario .form-group {
       margin: 50px; }
       .contact form .formulario .form-group input {
@@ -318,12 +318,12 @@ footer {
     transform: scale(1.02); } }
     .contact form .formulario .horario p {
       color: #FFFFFF;
-      margin-right: 100px;
       font-family: "Assistant", sans-serif;
       font-size: 20px;
       font-weight: bold;
       text-transform: uppercase;
-      letter-spacing: 2px; }
+      letter-spacing: 2px;
+      text-align: center; }
 
 /*Estilos body quienessomos.html*/
 .bodyNosotros {
